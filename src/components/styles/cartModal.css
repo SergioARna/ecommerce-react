@@ -1,0 +1,131 @@
+.cart__modal.open {
+    right: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f4f0f076;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    /* backdrop-filter: blur(2px); */
+}
+
+.cart__modal {
+    background: #fff;
+    bottom: 0;
+    box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
+    position: fixed;
+    right: -100%;
+    top: 50px;
+    transition: right .4s ease;
+    width: 65%;
+    z-index: 9;
+    overflow: auto;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.cart .cart__list {
+    flex: 1 1;
+}
+
+.cart .cart__title {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cart .checkout__section {
+    border-top: 1px solid #dcd9d9;
+    padding: 30px 20px;
+}
+
+.cart .checkout__section .cart__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart .checkout__section .cart__total .label {
+    color: #dcd9d9;
+}
+
+.cart .checkout__section .cart__total b {
+    font-size: 1.1rem;
+}
+
+.cart .checkout__section .checkout__btn {
+    background: #f85555;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+/* secction of product */
+
+.cart .cart__product-list {
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
+.cart .cart__product-list .cart__item {
+    margin-bottom: 3em;
+}
+
+.cart .cart__product-list .cart__item .product__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.cart .cart__product-list .cart__item .product__info .product__details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.product__info .product__details .product__brand {
+    color: #c7c7c7;
+    font-size: .8rem;
+    margin-bottom: 2px;
+}
+
+.product__info .product__details .product__name {
+    color: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.product__info .product__details .product__quantity {
+    border: 1px solid #dcd9d9;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 1.8;
+    text-align: center;
+    width: 60px;
+}
+
+.product__info .product__delete .delete__btn {
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+
+.cart__item .total {
+    text-align: end;
+}
+
+@media (min-width: 700px) {
+    .cart__modal {
+        width: 25%;
+    }
+}

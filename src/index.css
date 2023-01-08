@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: #f85555;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+section {
+    display: block;
+}

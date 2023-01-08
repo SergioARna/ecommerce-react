@@ -1,0 +1,106 @@
+.purchases__content {
+    margin: 50px auto;
+}
+
+.purchases__title {
+    position: relative;
+    font-size: 1.8rem;
+    left: 50px;
+}
+
+.purchases-logic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.purchases__items {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.purchases__items .purchases__header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.purchases__items .purchases__products-list {
+    padding: 0px 10px 10px;
+}
+
+.purchases__items .purchases__products-list .purchases__products-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.purchases__products-items .purchases__img {
+    grid-column: 2 / 4;
+}
+
+.purchases__products-items .purchases__name {
+    grid-column: 1 / -1;
+    font-size: 1.3rem;
+    text-align: start;
+    font-weight: 600;
+    width: 60%;
+    color: rgb(76, 72, 72);
+}
+
+.purchases__products-items .purchases__quantity {
+    grid-column: 1 / 3;
+    margin-right: -100px;
+    padding: 0 10px;
+    width: 80px;
+    width: 30%;
+}
+
+.purchases__products-items .purchases__quantity .purchases__box {
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.purchases__products-items .purchases__price {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (min-width: 700px) {
+    .purchases-logic {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    .purchases__items .purchases__products-list .purchases__products-items {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .purchases__products-items .purchases__quantity {
+        padding: 0 10px;
+        width: 80px;
+        position: relative;
+        left: -20px;
+    }
+}

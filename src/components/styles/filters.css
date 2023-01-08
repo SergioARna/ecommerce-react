@@ -1,0 +1,250 @@
+.filter__container {
+    display: none;
+}
+
+.filter__content {
+    width: 95%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 5px;
+    background-color: transparent;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.filter__price {
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 3em;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.filter__price.closed {
+    max-height: 50px;
+}
+
+.filter__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em .7em;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.filter__header .filter__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.filter__header .icon {
+    font-size: 1.7rem;
+}
+
+.form__filter {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.form__filter-from {
+    padding: .7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .2em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form__filter-from .form__filter-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 .4em;
+}
+
+.form__filter-from .form__filter-input {
+    padding: .2em;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #ccc;
+}
+
+.form__filter .filter__btn {
+    background-color: #f85555;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    width: max-content;
+    align-self: flex-end;
+    margin-right: 4%;
+    font-size: 1.2rem;
+    border-radius: .4em;
+    transition: .3s ease;
+}
+
+.form__filter .filter__btn:hover {
+    color: #ccc;
+    background-color: #bd3b3b;
+}
+
+.filter__category {
+    width: 95%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.filter__category.closed {
+    max-height: 50px;
+}
+
+.filter__category .category__list {
+    width: max-content;
+    padding: .2em 1.4em;
+}
+
+.category__list .list__items {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: .1em;
+    font-weight: 500;
+    text-align: start;
+    background-color: transparent;
+}
+
+@media (min-width: 700px) {
+    .filter__container {
+        display: block;
+    }
+
+    .filter__content {
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    .filter__price {
+        width: 85%;
+        margin-left: 20px;
+        margin-top: 3em;
+        margin-bottom: 10px;
+        max-height: 300px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+
+    .filter__price.closed {
+        max-height: 50px;
+    }
+
+    .filter__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em .7em;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    .filter__header .filter__title {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .filter__header .icon {
+        font-size: 1.7rem;
+    }
+
+    .form__filter {
+        padding: .5em;
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+    }
+
+    .form__filter-from {
+        padding: .7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: .2em;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .form__filter-from .form__filter-label {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 .4em;
+    }
+
+    .form__filter-from .form__filter-input {
+        padding: .2em;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        border: 1px solid #ccc;
+    }
+
+    .form__filter .filter__btn {
+        background-color: #f85555;
+        color: #fff;
+        font-weight: 500;
+        padding: 8px 15px;
+        width: max-content;
+        align-self: flex-end;
+        margin-right: 4%;
+        font-size: 1.2rem;
+        border-radius: .4em;
+        transition: .3s ease;
+    }
+
+    .form__filter .filter__btn:hover {
+        color: #ccc;
+        background-color: #bd3b3b;
+    }
+
+    .filter__category {
+        width: 85%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        max-height: 300px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+
+    .filter__category.closed {
+        max-height: 50px;
+    }
+
+    .filter__category .category__list {
+        width: max-content;
+        padding: .2em 1.4em;
+    }
+
+    .category__list .list__items {
+        font-size: 1.2rem;
+        margin-bottom: .1em;
+        font-weight: 500;
+        text-align: start;
+        background-color: transparent;
+    }
+}

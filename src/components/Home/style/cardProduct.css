@@ -1,0 +1,116 @@
+.box__content-card {
+    padding: 1em;
+}
+
+.card__content {
+    width: 100%;
+    height: 450px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dcd9d9;
+    border-radius: 1em;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    padding: 1em;
+    border-bottom: 1px solid #dcd9d9;
+    position: relative;
+}
+
+.card__img .img__primary {
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    display: block;
+}
+
+.card__img .img__primary:hover {
+    display: none;
+}
+
+.card__img .over {
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+    background-color: #fff;
+    position: absolute;
+    transition: .8s;
+    opacity: 0;
+}
+
+.card__img .over:hover {
+    opacity: 1;
+}
+
+.card__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    position: relative;
+}
+
+.card__title {
+    font-size: 1.1rem;
+    color: #515151;
+    margin-top: .5em;
+}
+
+.card__price {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.card__item-price {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #c7c7c7;
+}
+
+.card__item-valor {
+    font-size: 1rem;
+    position: relative;
+    left: 14px;
+    font-weight: 600;
+    color: rgba(122, 120, 120, 0.949);
+}
+
+.card__item-valor::before {
+    content: "$";
+    position: absolute;
+    left: -10px;
+}
+
+.card__btn {
+    position: absolute;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 30px;
+    background-color: #f85555;
+    color: #ffffff;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.card__btn:hover {
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.56);
+    background-color: #bd3b3b;
+}
